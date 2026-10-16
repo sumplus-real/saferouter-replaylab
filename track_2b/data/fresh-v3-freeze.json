@@ -1,0 +1,13 @@
+{
+  "frozen_at": "2026-10-15T17:48:57.098918+00:00",
+  "protocol": "apertus-chat-json-schema-v3-teaching",
+  "selection_evidence": "Previously observed T02/T07 both exact; NOT blind. No action-plan compiler added because first teaching change corrected both.",
+  "policy": "One-pass new8 after freeze; old12 nonblind. Resource validator refusals separately from model refusals. No gold passed to generate. No protocol changes while collecting.",
+  "sha256": {
+    "src/model.py": "21ac8635ad4d5a8af3621de39a4bb457c373f2e41a8f1a947f327f16b294fbe1",
+    "src/core.py": "a2591328da80baf0256228aa3d375b54494328ff6bf81dcb2056a25746d9dc05",
+    "src/tasks.py": "4cb6eea3acc3e2ecb44172dc60927e37bd29833f64791598ce15b58453123d57",
+    "data/tasks.json": "3d75b342e5ff8c5dc0d10b068c1cb7975e0ddfb537fcb15b32a09df27a022589",
+    "data/fresh-requirements-v3.json": "50a94469778a30a1d696c0f060918d422dd576564f1ccc9cedcc2b97430cf588"
+  }
+}

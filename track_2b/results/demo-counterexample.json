@@ -1,0 +1,222 @@
+{
+  "payload": {
+    "format": "replaylab-1",
+    "spec": "router-spec-v1",
+    "original": {
+      "ops": [
+        {
+          "op": "request",
+          "key": "request1",
+          "stream": true,
+          "break_at": "after_first_chunk"
+        },
+        {
+          "op": "cancel",
+          "key": "request1"
+        },
+        {
+          "op": "retry",
+          "key": "request1"
+        }
+      ]
+    },
+    "minimized": {
+      "ops": [
+        {
+          "op": "request",
+          "key": "request1",
+          "stream": true,
+          "break_at": "after_first_chunk"
+        },
+        {
+          "op": "cancel",
+          "key": "request1"
+        },
+        {
+          "op": "retry",
+          "key": "request1"
+        }
+      ]
+    },
+    "mutant": "late_completion",
+    "provenance": {
+      "source": "Actual Apertus task response, repaired cohort",
+      "task_id": "T02",
+      "contract": "Start a stream interrupted after its first chunk, cancel it, then retry that cancelled request.",
+      "answer": "{\"ops\":[{\"op\":\"request\",\"key\":\"request1\",\"stream\":true,\"break_at\":\"after_first_chunk\"},{\"op\":\"cancel\",\"key\":\"request1\"},{\"op\":\"retry\",\"key\":\"request1\"}]}",
+      "raw_response_sha256": "2001450b8f2671816b68cf8c5548f7c7a0b196dbaa55b1ba66e1cdec8438da70",
+      "seconds": 175.58063870796468
+    },
+    "original_trace": [
+      {
+        "index": 0,
+        "operation": {
+          "op": "request",
+          "key": "request1",
+          "stream": true,
+          "break_at": "after_first_chunk"
+        },
+        "reference": {
+          "request1": {
+            "status": "interrupted",
+            "charge": 0,
+            "pending": false,
+            "stream": true
+          }
+        },
+        "target": {
+          "request1": {
+            "status": "interrupted",
+            "charge": 0,
+            "pending": false,
+            "stream": true
+          }
+        },
+        "expected_status": "ok",
+        "actual_status": "ok",
+        "mismatch": false
+      },
+      {
+        "index": 1,
+        "operation": {
+          "op": "cancel",
+          "key": "request1"
+        },
+        "reference": {
+          "request1": {
+            "status": "cancelled",
+            "charge": 0,
+            "pending": false,
+            "stream": true
+          }
+        },
+        "target": {
+          "request1": {
+            "status": "cancelled",
+            "charge": 0,
+            "pending": false,
+            "stream": true
+          }
+        },
+        "expected_status": "ok",
+        "actual_status": "ok",
+        "mismatch": false
+      },
+      {
+        "index": 2,
+        "operation": {
+          "op": "retry",
+          "key": "request1"
+        },
+        "reference": {
+          "request1": {
+            "status": "cancelled",
+            "charge": 0,
+            "pending": false,
+            "stream": true
+          }
+        },
+        "target": {
+          "request1": {
+            "status": "done",
+            "charge": 1,
+            "pending": false,
+            "stream": true
+          }
+        },
+        "expected_status": "cancelled",
+        "actual_status": "ok",
+        "mismatch": true
+      }
+    ],
+    "replay": {
+      "spec": "router-spec-v1",
+      "mutant": "late_completion",
+      "detected": true,
+      "trace": [
+        {
+          "index": 0,
+          "operation": {
+            "op": "request",
+            "key": "request1",
+            "stream": true,
+            "break_at": "after_first_chunk"
+          },
+          "reference": {
+            "request1": {
+              "status": "interrupted",
+              "charge": 0,
+              "pending": false,
+              "stream": true
+            }
+          },
+          "target": {
+            "request1": {
+              "status": "interrupted",
+              "charge": 0,
+              "pending": false,
+              "stream": true
+            }
+          },
+          "expected_status": "ok",
+          "actual_status": "ok",
+          "mismatch": false
+        },
+        {
+          "index": 1,
+          "operation": {
+            "op": "cancel",
+            "key": "request1"
+          },
+          "reference": {
+            "request1": {
+              "status": "cancelled",
+              "charge": 0,
+              "pending": false,
+              "stream": true
+            }
+          },
+          "target": {
+            "request1": {
+              "status": "cancelled",
+              "charge": 0,
+              "pending": false,
+              "stream": true
+            }
+          },
+          "expected_status": "ok",
+          "actual_status": "ok",
+          "mismatch": false
+        },
+        {
+          "index": 2,
+          "operation": {
+            "op": "retry",
+            "key": "request1"
+          },
+          "reference": {
+            "request1": {
+              "status": "cancelled",
+              "charge": 0,
+              "pending": false,
+              "stream": true
+            }
+          },
+          "target": {
+            "request1": {
+              "status": "done",
+              "charge": 1,
+              "pending": false,
+              "stream": true
+            }
+          },
+          "expected_status": "cancelled",
+          "actual_status": "ok",
+          "mismatch": true
+        }
+      ]
+    },
+    "minimizer_calls": 3
+  },
+  "sha256": "4309c5c61902b22ba3b0bd9fe3be3305d594018d83b0cc5270b4c7adf8093f22"
+}

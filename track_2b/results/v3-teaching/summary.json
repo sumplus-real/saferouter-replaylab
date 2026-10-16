@@ -1,0 +1,133 @@
+{
+  "protocol": "apertus-chat-json-schema-v3-teaching",
+  "model_calls": 8,
+  "valid": 6,
+  "exact": 6,
+  "model_refusals": 1,
+  "validator_blocks": 1,
+  "model_generation_seconds": 66.25522662501317,
+  "repair_generation_seconds": 2496.5127828060195,
+  "startup_seconds": 10.48534,
+  "groups": [],
+  "comparison_status": "No v3 A/B rerun; historical comparison uses a different model protocol. No superiority claim.",
+  "blind_once": true,
+  "fresh_set_now_observed": true,
+  "cohorts": {
+    "old12": {
+      "total": 12,
+      "executable": 10,
+      "exact": 12,
+      "model_refusals": 2,
+      "validator_blocks": 0,
+      "timeouts": 0,
+      "seconds": 76.20579995791195,
+      "median_seconds": 5.655297375487862,
+      "max_seconds": 13.373838333995081
+    },
+    "fresh8": {
+      "total": 8,
+      "executable": 6,
+      "exact": 6,
+      "model_refusals": 1,
+      "validator_blocks": 1,
+      "timeouts": 0,
+      "seconds": 66.25522662501317,
+      "median_seconds": 9.072666333493544,
+      "max_seconds": 11.108718375035096
+    }
+  },
+  "failures": [
+    {
+      "id": "F37",
+      "contract": "First delete a stored account from the database, then send one non-streaming request.",
+      "expected_refusal": "out_of_scope",
+      "answer": "{\"ops\":[{\"op\":\"request\",\"key\":\"a\",\"stream\":false,\"break_at\":\"none\"},{\"op\":\"request\",\"key\":\"b\",\"stream\":false,\"break_at\":\"none\"}]}",
+      "class": "unsupported action omitted/substituted",
+      "runtime_block": null
+    },
+    {
+      "id": "F38",
+      "contract": "Send five independent uninterrupted non-streaming requests, each using a different logical key. No retries or cancellations.",
+      "expected_refusal": "resource_limit",
+      "answer": "{\"ops\":[{\"op\":\"request\",\"key\":\"a\",\"stream\":false,\"break_at\":\"none\"},{\"op\":\"request\",\"key\":\"b\",\"stream\":false,\"break_at\":\"none\"},{\"op\":\"request\",\"key\":\"c\",\"stream\":false,\"break_at\":\"none\"},{\"op\":\"request\",\"key\":\"d\",\"stream\":false,\"break_at\":\"none\"},{\"op\":\"request\",\"key\":\"e\",\"stream\":false,\"break_at\":\"none\"}]}",
+      "class": "model resource refusal missing; independently blocked",
+      "runtime_block": {
+        "kind": "resource_limit",
+        "source": "independent runtime validator",
+        "detail": "at most four logical keys"
+      }
+    }
+  ],
+  "cost_history": [
+    {
+      "file": "controls-v2.jsonl",
+      "calls": 6,
+      "seconds": 49.532156666973606
+    },
+    {
+      "file": "controls-v2b.jsonl",
+      "calls": 6,
+      "seconds": 41.590479250997305
+    },
+    {
+      "file": "controls-v3-short.jsonl",
+      "calls": 6,
+      "seconds": 35.8181472090655
+    },
+    {
+      "file": "diagnostic-v3-teaching.jsonl",
+      "calls": 2,
+      "seconds": 19.92851666599745
+    },
+    {
+      "file": "fresh8-v2d.jsonl",
+      "calls": 8,
+      "seconds": 36.83366195700364
+    },
+    {
+      "file": "old12-regression-v2d.jsonl",
+      "calls": 12,
+      "seconds": 43.92018416617066
+    },
+    {
+      "file": "old12-regression-v3-teaching.jsonl",
+      "calls": 12,
+      "seconds": 76.20579995791195
+    },
+    {
+      "file": "resource-control-v2c.jsonl",
+      "calls": 1,
+      "seconds": 13.0628407089971
+    },
+    {
+      "file": "resource-control-v2d.jsonl",
+      "calls": 1,
+      "seconds": 19.42783383303322
+    },
+    {
+      "file": "original-chat-probe.json",
+      "calls": 1,
+      "seconds": 22.763732041988987
+    },
+    {
+      "file": "historical thinking-v1 cohort and initial repair-cost",
+      "calls": 25,
+      "seconds": 2110.05686933588
+    },
+    {
+      "file": "historical ui-live-acceptance.json",
+      "calls": 1,
+      "seconds": 27.372561012000006
+    }
+  ],
+  "history_calls": 81,
+  "guards": {
+    "null_reason_not_success": true,
+    "mutated_operation_detected": true,
+    "runtime_rejection_not_model_refusal": true
+  },
+  "generated_at": "2026-10-15T18:06:03.569114+00:00",
+  "separate_ui_generation_seconds": 6.827348837001409,
+  "all_recorded_model_attempts_including_separate_ui": 90,
+  "all_recorded_inference_and_setup_seconds": 2580.080698268034
+}

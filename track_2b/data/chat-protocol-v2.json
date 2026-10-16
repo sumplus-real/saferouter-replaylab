@@ -1,0 +1,168 @@
+{
+  "protocol": "apertus-chat-json-schema-v2d",
+  "template": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Resource policy has priority over satisfying the requested path: at most FOUR distinct logical keys, counting both real requests and nonexistent keys used for negative tests, and at most TWELVE operations. If the path needs even one more key or operation than these budgets, output only {\"reject\":\"resource_limit\"}, never ops. An over-budget path is not an executable proposal even if every individual operation is supported.\nGenerate exactly the API operation sequence requested, with no extra operations. Return ops only, or a reject object when no definite supported sequence can be produced. request requires op,key,stream,break_at; retry and cancel require only op,key. Use arbitrary logical keys matching [a-z][a-z0-9_]{0,15}. Reuse a key to refer to the same request; independent requests use different keys. Default break_at none unless before_headers or after_first_chunk is requested. A nonexistent key is allowed for negative tests. Never add a prerequisite request for a negative retry/cancel test. No expected answers, executable code, or judgments. Limits: 1 to 12 operations and at most 4 distinct logical keys, including unknown keys. Count the required operations and distinct logical keys before choosing ops or reject. If the requested path exceeds either limit, return {\"reject\":\"resource_limit\"}; never shorten or merge distinct requests to fit. If the requested sequence is ambiguous, return {\"reject\":\"ambiguous\"}. If it needs an unsupported operation or contradictory stream settings, return {\"reject\":\"out_of_scope\"}. after_first_chunk requires stream=true."
+      },
+      {
+        "role": "user",
+        "content": "Start a non-streaming request and cancel it."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"ops\":[{\"op\":\"request\",\"key\":\"k\",\"stream\":false,\"break_at\":\"none\"},{\"op\":\"cancel\",\"key\":\"k\"}]}"
+      },
+      {
+        "role": "user",
+        "content": "Retry the same unknown key thirteen times, with no request."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reject\":\"resource_limit\"}"
+      },
+      {
+        "role": "user",
+        "content": "Start seven independent non-streaming requests without interruption."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reject\":\"resource_limit\"}"
+      },
+      {
+        "role": "user",
+        "content": "<USER_CONTRACT>"
+      }
+    ],
+    "temperature": 0,
+    "seed": 42,
+    "max_tokens": 450,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "router_proposal",
+        "strict": true,
+        "schema": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "ops": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 12,
+                  "items": {
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "op": {
+                            "const": "request"
+                          },
+                          "key": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 16,
+                            "pattern": "^[a-z][a-z0-9_]{0,15}$"
+                          },
+                          "stream": {
+                            "type": "boolean"
+                          },
+                          "break_at": {
+                            "enum": [
+                              "none",
+                              "before_headers",
+                              "after_first_chunk"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "op",
+                          "key",
+                          "stream",
+                          "break_at"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "op": {
+                            "const": "retry"
+                          },
+                          "key": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 16,
+                            "pattern": "^[a-z][a-z0-9_]{0,15}$"
+                          }
+                        },
+                        "required": [
+                          "op",
+                          "key"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "op": {
+                            "const": "cancel"
+                          },
+                          "key": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 16,
+                            "pattern": "^[a-z][a-z0-9_]{0,15}$"
+                          }
+                        },
+                        "required": [
+                          "op",
+                          "key"
+                        ],
+                        "additionalProperties": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "ops"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "reject": {
+                  "enum": [
+                    "ambiguous",
+                    "out_of_scope",
+                    "resource_limit"
+                  ]
+                }
+              },
+              "required": [
+                "reject"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        }
+      }
+    },
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "selection_basis": "Original successful wire reproduced; five non-limit controls passed in structured protocol; explicit independent resource teaching plus priority correction calibrated on one known limit control. Not heldout.",
+  "legacy_materials_head": "661123ad70cfd8c60841fc3bd19ef35170e9b57a",
+  "thinking_v1_results": {
+    "executable": 4,
+    "exact": 3,
+    "n": 12,
+    "timeouts": 3
+  },
+  "no_native_thinking_boundary_for_chat": true
+}

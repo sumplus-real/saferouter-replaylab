@@ -1,0 +1,8 @@
+{
+  "reason": "Scorer corrected: missing rejection != successful task; original raw rows left unchanged",
+  "total": 12,
+  "valid": 0,
+  "exact": 0,
+  "errors": 12,
+  "generation_seconds": 218.19869983394165
+}

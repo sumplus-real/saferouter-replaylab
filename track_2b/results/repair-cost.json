@@ -1,0 +1,9 @@
+{
+  "calls": 13,
+  "seconds": 328.5381941679516,
+  "items": {
+    "failed_initial_cohort": 218.19869983394165,
+    "adapter_canary": 110.33949433400994
+  },
+  "scope": "All failed initial task generation and separate adapter diagnostic; excludes code-authoring human/assistant time"
+}

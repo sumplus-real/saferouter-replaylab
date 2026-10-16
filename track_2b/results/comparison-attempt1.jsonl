@@ -1,0 +1,1 @@
+{"target": "correct", "arm": "A", "seed": 17, "mode": "calls", "calls": 800, "sequences": 73, "detected": false, "first_counterexample_seconds": null, "elapsed_seconds": 0.22600775002501905, "model_overhead_seconds": 0, "end_to_end_seconds": 0.2260079580009915, "original": null, "minimized": null, "shrink_calls": 0, "shrink_complete": false}

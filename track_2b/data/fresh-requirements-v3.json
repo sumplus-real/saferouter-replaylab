@@ -1,0 +1,163 @@
+[
+  {
+    "id": "F31",
+    "contract": "Begin a non-streaming request interrupted before headers. Retry it once, cancel it once, and retry it once more, in that order.",
+    "expected": {
+      "ops": [
+        {
+          "op": "request",
+          "key": "a",
+          "stream": false,
+          "break_at": "before_headers"
+        },
+        {
+          "op": "retry",
+          "key": "a"
+        },
+        {
+          "op": "cancel",
+          "key": "a"
+        },
+        {
+          "op": "retry",
+          "key": "a"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "F32",
+    "contract": "Cancel an unknown key once. Then create one uninterrupted streaming request using that very same key. Finally retry that key once.",
+    "expected": {
+      "ops": [
+        {
+          "op": "cancel",
+          "key": "a"
+        },
+        {
+          "op": "request",
+          "key": "a",
+          "stream": true,
+          "break_at": "none"
+        },
+        {
+          "op": "retry",
+          "key": "a"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "F33",
+    "contract": "Create a non-streaming request without interruption. Submit that identical request again with the same logical key and settings. Then cancel it twice total.",
+    "expected": {
+      "ops": [
+        {
+          "op": "request",
+          "key": "a",
+          "stream": false,
+          "break_at": "none"
+        },
+        {
+          "op": "request",
+          "key": "a",
+          "stream": false,
+          "break_at": "none"
+        },
+        {
+          "op": "cancel",
+          "key": "a"
+        },
+        {
+          "op": "cancel",
+          "key": "a"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "F34",
+    "contract": "先发起一个在首块之后中断的流式请求；再发起一个独立的、在响应头之前中断的非流式请求。先取消第二个，再重试第一个，最后重试第二个。每个动作只执行一次。",
+    "expected": {
+      "ops": [
+        {
+          "op": "request",
+          "key": "a",
+          "stream": true,
+          "break_at": "after_first_chunk"
+        },
+        {
+          "op": "request",
+          "key": "b",
+          "stream": false,
+          "break_at": "before_headers"
+        },
+        {
+          "op": "cancel",
+          "key": "b"
+        },
+        {
+          "op": "retry",
+          "key": "a"
+        },
+        {
+          "op": "retry",
+          "key": "b"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "F35",
+    "contract": "Retry one unknown logical key three times in total. Next create a separate uninterrupted non-streaming request. Cancel only the new request once. Do not create a request for the unknown key.",
+    "expected": {
+      "ops": [
+        {
+          "op": "retry",
+          "key": "a"
+        },
+        {
+          "op": "retry",
+          "key": "a"
+        },
+        {
+          "op": "retry",
+          "key": "a"
+        },
+        {
+          "op": "request",
+          "key": "b",
+          "stream": false,
+          "break_at": "none"
+        },
+        {
+          "op": "cancel",
+          "key": "b"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "F36",
+    "contract": "A request might need a retry or perhaps a cancellation; I have not chosen which operation or which key yet.",
+    "expected": null,
+    "reject_reason": "ambiguous"
+  },
+  {
+    "id": "F37",
+    "contract": "First delete a stored account from the database, then send one non-streaming request.",
+    "expected": null,
+    "reject_reason": "out_of_scope"
+  },
+  {
+    "id": "F38",
+    "contract": "Send five independent uninterrupted non-streaming requests, each using a different logical key. No retries or cancellations.",
+    "expected": null,
+    "reject_reason": "resource_limit"
+  }
+]

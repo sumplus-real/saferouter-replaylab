@@ -1,0 +1,74 @@
+{
+  "hypothesis": "6.151.9",
+  "python": "3.12.14",
+  "model_calls": 12,
+  "valid": 4,
+  "exact": 3,
+  "model_generation_seconds": 1781.5186751679284,
+  "startup_seconds": 10.48534,
+  "repair_generation_seconds": 328.5381941679516,
+  "total_model_attempts": 25,
+  "independent_heldout_claim": false,
+  "groups": [
+    {
+      "mode": "calls",
+      "arm": "A",
+      "defect_hits": 30,
+      "defect_trials": 30,
+      "false_positives": 0,
+      "families": {
+        "retry_double_charge": 5,
+        "late_completion": 5,
+        "cross_key": 5,
+        "unknown_cancel": 5,
+        "stream_residue": 5,
+        "reject_legal": 5
+      }
+    },
+    {
+      "mode": "calls",
+      "arm": "B",
+      "defect_hits": 30,
+      "defect_trials": 30,
+      "false_positives": 0,
+      "families": {
+        "retry_double_charge": 5,
+        "late_completion": 5,
+        "cross_key": 5,
+        "unknown_cancel": 5,
+        "stream_residue": 5,
+        "reject_legal": 5
+      }
+    },
+    {
+      "mode": "time",
+      "arm": "A",
+      "defect_hits": 30,
+      "defect_trials": 30,
+      "false_positives": 0,
+      "families": {
+        "retry_double_charge": 5,
+        "late_completion": 5,
+        "cross_key": 5,
+        "unknown_cancel": 5,
+        "stream_residue": 5,
+        "reject_legal": 5
+      }
+    },
+    {
+      "mode": "time",
+      "arm": "B",
+      "defect_hits": 0,
+      "defect_trials": 30,
+      "false_positives": 0,
+      "families": {
+        "retry_double_charge": 0,
+        "late_completion": 0,
+        "cross_key": 0,
+        "unknown_cancel": 0,
+        "stream_residue": 0,
+        "reject_legal": 0
+      }
+    }
+  ]
+}

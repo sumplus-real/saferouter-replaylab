@@ -1,0 +1,10 @@
+{
+  "code_commit": "27d62cc",
+  "model_protocol": "apertus-chat-json-schema-v3-teaching",
+  "actual_ui_asset": "assets/actual-ui-v3.png",
+  "actual_ui_sha256": "bee1b22f19d2bded8d0f507a1cf6660238ab4f1a0b21183e7b7385d17299e92f",
+  "live_generation_seconds": 6.827348837001409,
+  "fresh_exact": "6/8",
+  "presentation": "Edited static evidence; no continuous live recording",
+  "human_review": "Functional automated UI test, not independent human validation"
+}

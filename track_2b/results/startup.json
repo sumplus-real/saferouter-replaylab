@@ -1,0 +1,6 @@
+{
+  "seconds": 10.48534,
+  "measurement": "llama-server monotonic load-to-listen log; CPU2 no GPU",
+  "cold_download_seconds": 0,
+  "weights_preexisting": true
+}

@@ -1,0 +1,11 @@
+# Review boundary, 16 October 2026
+
+Apertus proposes bounded data. It does not authorize execution or prove that it covered the user's full request. The browser displays the original contract and complete candidate. Before every replay the operator explicitly checks all actions, key relationships, repetition counts, and interruptions. Reject proposals that omit or substitute an action, including unsupported operations. Any contract, candidate or target change clears the review confirmation and previous result/download.
+
+The server requires an explicit confirmation containing the exact current contract and candidate. Missing or stale confirmations return 400. Independently validated DSL fields, types and resource bounds still apply. The downloaded counterexample retains the review attestation. This is an accidental-execution guard in a local prototype: it is not authentication, an enforceable human identity check, or an automatic semantic proof. A caller can fabricate its own attestation. Test automation's UI confirmation is not evidence of an independent human review.
+
+The frozen new8 result remains **6/8 exact**, with five correct operation sequences, one correct ambiguous refusal, one unsupported-action substitution (F37), and one missing model resource refusal independently blocked (F38). The latter is not credited as a model refusal. Old12 regression was 12/12 but is not unseen evidence. No protocol/gold changes or retries were made during new8 collection. These cases are now observed.
+
+In F37 the model turned a database deletion followed by one request into two requests. The operator must reject it; the schema alone cannot recognize the omitted meaning. F38 creates five distinct keys and the independent validator blocks it before a candidate is offered for replay. Runtime cannot delete databases, execute shell commands or perform real provider requests.
+
+Current validation records are in results/v3-teaching. Root results are retained history from the earlier thinking adapter, including its 160-row A/B comparison. That comparison does not establish the performance of v3 or the review workflow. There is no new A/B result or superiority claim. Review time has not been measured. All tests are synthetic, and the detailed reference still needs independent owner review.

@@ -1,0 +1,209 @@
+{
+  "protocol": "apertus-chat-json-schema-v3-teaching",
+  "model": "Apertus-v1.5-8B Q4_K_M",
+  "contract": "Start a stream interrupted after its first chunk, cancel it, then retry that cancelled request.",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Generate exactly the API operation sequence requested, with no extra operations. Return ops only. request requires op,key,stream,break_at; retry and cancel require only op,key. Use arbitrary logical keys. Reuse a key to refer to the same request, use different keys for independent requests. break_at none unless requested before_headers or after_first_chunk. A nonexistent key may be used for a requested negative test. Never add a prerequisite request for a negative retry/cancel test. No expected answers or executable code. If the requested operation sequence is not specified unambiguously, return {\"reject\":\"ambiguous\"}. If the contract requires any operation outside request/retry/cancel, return {\"reject\":\"out_of_scope\"}. The runtime permits at most12 operations and4 distinct keys; return {\"reject\":\"resource_limit\"} for requests exceeding these limits. Retrying/cancelling unknown keys and cancelled or completed requests are valid test inputs, not reasons to refuse."
+      },
+      {
+        "role": "user",
+        "content": "Start a non-streaming request, retry that request once, then start a different non-streaming request."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"ops\":[{\"op\":\"request\",\"key\":\"x\",\"stream\":false,\"break_at\":\"none\"},{\"op\":\"retry\",\"key\":\"x\"},{\"op\":\"request\",\"key\":\"y\",\"stream\":false,\"break_at\":\"none\"}]}"
+      },
+      {
+        "role": "user",
+        "content": "Cancel a missing key three times total, then retry that same key once. Send no new request."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"ops\":[{\"op\":\"cancel\",\"key\":\"z\"},{\"op\":\"cancel\",\"key\":\"z\"},{\"op\":\"cancel\",\"key\":\"z\"},{\"op\":\"retry\",\"key\":\"z\"}]}"
+      },
+      {
+        "role": "user",
+        "content": "Start a stream interrupted after its first chunk, cancel it, then retry that cancelled request."
+      }
+    ],
+    "temperature": 0,
+    "seed": 42,
+    "max_tokens": 450,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "router_proposal",
+        "strict": true,
+        "schema": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "ops": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 12,
+                  "items": {
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "op": {
+                            "const": "request"
+                          },
+                          "key": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 16,
+                            "pattern": "^[a-z][a-z0-9_]{0,15}$"
+                          },
+                          "stream": {
+                            "type": "boolean"
+                          },
+                          "break_at": {
+                            "enum": [
+                              "none",
+                              "before_headers",
+                              "after_first_chunk"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "op",
+                          "key",
+                          "stream",
+                          "break_at"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "op": {
+                            "const": "retry"
+                          },
+                          "key": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 16,
+                            "pattern": "^[a-z][a-z0-9_]{0,15}$"
+                          }
+                        },
+                        "required": [
+                          "op",
+                          "key"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "op": {
+                            "const": "cancel"
+                          },
+                          "key": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 16,
+                            "pattern": "^[a-z][a-z0-9_]{0,15}$"
+                          }
+                        },
+                        "required": [
+                          "op",
+                          "key"
+                        ],
+                        "additionalProperties": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "ops"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "reject": {
+                  "enum": [
+                    "ambiguous",
+                    "out_of_scope",
+                    "resource_limit"
+                  ]
+                }
+              },
+              "required": [
+                "reject"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        }
+      }
+    },
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "raw": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"ops\":[{\"op\":\"request\",\"key\":\"a\",\"stream\":true,\"break_at\":\"after_first_chunk\"},{\"op\":\"cancel\",\"key\":\"a\"},{\"op\":\"retry\",\"key\":\"a\"}]}"
+        }
+      }
+    ],
+    "created": 1792087614,
+    "model": "Apertus-v1.5-8B Q4_K_M (recorded digest)",
+    "system_fingerprint": "b11429-d81235049",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 44,
+      "prompt_tokens": 373,
+      "total_tokens": 417,
+      "prompt_tokens_details": {
+        "cached_tokens": 353
+      }
+    },
+    "id": "chatcmpl-flzkJmZBdXPE3aYqmtmYn1qLZu7WnaNc",
+    "timings": {
+      "cache_n": 353,
+      "prompt_n": 20,
+      "prompt_ms": 2414.257,
+      "prompt_per_token_ms": 120.71285,
+      "prompt_per_second": 8.284122195772861,
+      "predicted_n": 44,
+      "predicted_ms": 4372.098,
+      "predicted_per_token_ms": 101.6766976744186,
+      "predicted_per_second": 9.835095187710797
+    }
+  },
+  "answer_text": "{\"ops\":[{\"op\":\"request\",\"key\":\"a\",\"stream\":true,\"break_at\":\"after_first_chunk\"},{\"op\":\"cancel\",\"key\":\"a\"},{\"op\":\"retry\",\"key\":\"a\"}]}",
+  "candidate": {
+    "ops": [
+      {
+        "op": "request",
+        "key": "a",
+        "stream": true,
+        "break_at": "after_first_chunk"
+      },
+      {
+        "op": "cancel",
+        "key": "a"
+      },
+      {
+        "op": "retry",
+        "key": "a"
+      }
+    ]
+  },
+  "seconds": 6.827348837001409
+}

@@ -1,0 +1,22 @@
+{
+  "code_commit": "fb782abe4bd18cb996a9de816aff6abc125b4ddc",
+  "model_cohort_code_commit": "81e1f7ee176d342c993efb71dd53e34e9ca8ba43",
+  "code_sha256": {
+    "track_2b/src/server.py": "502ecb77185eb4a4745f9460b5a83a80822f24216a42bc17db53a2bfd3003bf5",
+    "track_2b/src/index.html": "8f49258a020e693b6c73be1b2be03e18b61c5373e259a188bfffc8a3a5c80539",
+    "track_2b/src/tasks.py": "4cb6eea3acc3e2ecb44172dc60927e37bd29833f64791598ce15b58453123d57",
+    "track_2b/src/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "track_2b/src/core.py": "a2591328da80baf0256228aa3d375b54494328ff6bf81dcb2056a25746d9dc05",
+    "track_2b/src/model.py": "63abf704b08ac91b1b8dd6eee4e9b0cddff784b69a3e396ec58d6c297533aabc",
+    "track_2b/src/audit_results.py": "6952d73c0a0abb0753a33f1df5e8787b96ff29f56caefe4fa1d3bffe949ec6ca",
+    "track_2b/src/replay.py": "52185c6e457b3bab03b5052a22de3dfaa5add87e2970767b6680bf5fdf3283cc",
+    "track_2b/src/infer.py": "9b92b2d7bff0b1707af076f592aff4ffa0928d850289d6901f5cefad6f531047",
+    "track_2b/src/evaluate.py": "5f3fbf891652f4fae329eccb1cc4f947176752d0b6fbb0f21d8516a56f4171a0",
+    "track_2b/src/canaries.py": "45a95945e2baf94959d8443b1e4cb70978a45746abf67e02066fea41f531ee57",
+    "track_2b/tests/test_experiment.py": "7f239a62195f7a559cca14a7421f7b2cd470a5b865d8b18f34049b4e70fffec3",
+    "track_2b/tests/test_core.py": "2649467f239dba0f4b1ddbeef9964f7ece24974740696dd80964e457f162ba71",
+    "track_2b/tests/test_http.py": "bb6952f04c3bb94dbd20aa0ba419e5b802c2138e7e84385c93388b4c36973ba2"
+  },
+  "scope": "Same final code used for acceptance, replay, final evaluation and evidence rendering; model collection source listed separately, frozen core and contract tasks unchanged",
+  "evaluation_code_commit": "d620d15c0b851e6820766af8e2e551caead1f2ec"
+}

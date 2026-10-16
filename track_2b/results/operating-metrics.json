@@ -1,0 +1,38 @@
+{
+  "groups": [
+    {
+      "mode": "calls",
+      "arm": "A",
+      "target_calls": 11690,
+      "median_first_counterexample_seconds": 0.19858747950638644,
+      "clean_trials_with_execution": 10
+    },
+    {
+      "mode": "calls",
+      "arm": "B",
+      "target_calls": 9014,
+      "median_first_counterexample_seconds": 265.06785233348467,
+      "clean_trials_with_execution": 10
+    },
+    {
+      "mode": "time",
+      "arm": "A",
+      "target_calls": 123318,
+      "median_first_counterexample_seconds": 0.1783698544895742,
+      "clean_trials_with_execution": 10
+    },
+    {
+      "mode": "time",
+      "arm": "B",
+      "target_calls": 0,
+      "median_first_counterexample_seconds": null,
+      "clean_trials_with_execution": 0
+    }
+  ],
+  "extra_families_in_B_call_view": [],
+  "replay_success": {
+    "passed": 90,
+    "attempted": 90
+  },
+  "comparison_model_seconds": 2120.54220933588
+}

@@ -1,0 +1,174 @@
+{
+  "distribution_license": "CDLA-Permissive-2.0",
+  "files": [
+    {
+      "file": "experiment-plan.json",
+      "license": "CDLA-Permissive-2.0",
+      "origin": "Authored synthetic task/evaluation configuration; no human-subject data",
+      "instances": []
+    },
+    {
+      "file": "experiment-amendment.json",
+      "license": "CDLA-Permissive-2.0",
+      "origin": "Authored synthetic task/evaluation configuration; no human-subject data",
+      "instances": []
+    },
+    {
+      "file": "chat-protocol-v2.json",
+      "license": "CDLA-Permissive-2.0",
+      "origin": "Authored synthetic task/evaluation configuration; no human-subject data",
+      "instances": []
+    },
+    {
+      "file": "fresh-v2-freeze.json",
+      "license": "CDLA-Permissive-2.0",
+      "origin": "Authored synthetic task/evaluation configuration; no human-subject data",
+      "instances": []
+    },
+    {
+      "file": "spec-review.json",
+      "license": "CDLA-Permissive-2.0",
+      "origin": "Authored synthetic task/evaluation configuration; no human-subject data",
+      "instances": []
+    },
+    {
+      "file": "fresh-requirements-v2.json",
+      "license": "CDLA-Permissive-2.0",
+      "origin": "Authored synthetic task/evaluation configuration; no human-subject data",
+      "instances": [
+        {
+          "id": "N01",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "N02",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "N03",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "N04",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "N05",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "N06",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "N07",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "N08",
+          "license": "CDLA-Permissive-2.0"
+        }
+      ]
+    },
+    {
+      "file": "tasks.json",
+      "license": "CDLA-Permissive-2.0",
+      "origin": "Authored synthetic task/evaluation configuration; no human-subject data",
+      "instances": [
+        {
+          "id": "T01",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "T02",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "T03",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "T04",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "T05",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "T06",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "T07",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "T08",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "T09",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "T10",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "T11",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "T12",
+          "license": "CDLA-Permissive-2.0"
+        }
+      ]
+    },
+    {
+      "file": "fresh-v3-freeze.json",
+      "license": "CDLA-Permissive-2.0",
+      "origin": "Authored synthetic task/evaluation configuration; no human-subject data",
+      "instances": []
+    },
+    {
+      "file": "fresh-requirements-v3.json",
+      "license": "CDLA-Permissive-2.0",
+      "origin": "Authored synthetic task/evaluation configuration; no human-subject data",
+      "instances": [
+        {
+          "id": "F31",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "F32",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "F33",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "F34",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "F35",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "F36",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "F37",
+          "license": "CDLA-Permissive-2.0"
+        },
+        {
+          "id": "F38",
+          "license": "CDLA-Permissive-2.0"
+        }
+      ]
+    }
+  ]
+}

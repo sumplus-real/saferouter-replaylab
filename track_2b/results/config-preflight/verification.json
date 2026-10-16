@@ -1,0 +1,62 @@
+{
+  "scope": "Transport configuration only; synthetic local HTTP stub, not Apertus inference",
+  "native_tests": {
+    "run": 26,
+    "passed": 26,
+    "skipped": 0
+  },
+  "application_image_tests": {
+    "run": 26,
+    "passed": 25,
+    "skipped": 1,
+    "skip": "Host make-launch test; minimal application image contains neither make nor host Makefile. Actual host make run was separately exercised."
+  },
+  "actual_root_make_to_docker_to_host_stub": {
+    "new_model_inference_calls": 0,
+    "state_preserves_historical8": true,
+    "cases": [
+      {
+        "stub_only": true,
+        "positive": true,
+        "accepted": true,
+        "error": null,
+        "request_model": "apertus-preflight-stub",
+        "no_key_in_returned_evidence": true
+      },
+      {
+        "stub_only": true,
+        "positive": false,
+        "accepted": false,
+        "error": "HTTP Error 401: Unauthorized",
+        "request_model": "apertus-preflight-stub",
+        "no_key_in_returned_evidence": true
+      }
+    ],
+    "wire": [
+      {
+        "stub_only": true,
+        "path": "/v1/chat/completions",
+        "authorization_matches_test_key": true,
+        "model_matches_selected_alias": true,
+        "request_model": "apertus-preflight-stub",
+        "negative_case": false,
+        "status": 200,
+        "key_not_recorded": true
+      },
+      {
+        "stub_only": true,
+        "path": "/v1/chat/completions",
+        "authorization_matches_test_key": true,
+        "model_matches_selected_alias": true,
+        "request_model": "apertus-preflight-stub",
+        "negative_case": true,
+        "status": 401,
+        "key_not_recorded": true
+      }
+    ]
+  },
+  "initial_application_image_test_failure": "Host-only make test attempted make inside minimal image; original failure retained in private evidence; test now explicitly host-scoped. No production dependency added.",
+  "frozen_new8_exact": "6/8 unchanged; not rerun",
+  "added_model_inference_calls": 0,
+  "new_publication_or_terms": false
+}

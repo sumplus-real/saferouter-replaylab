@@ -1,0 +1,9 @@
+Current application: v3-teaching + exact proposal review, code27d62cc.
+Current report: Sumplus_Report.pdf = Sumplus_Report_v3.pdf.
+Current video: demo/SafeRouter_ReplayLab_90s.mp4 = demo/SafeRouter_ReplayLab_v3_90s.mp4.
+Current model validation: results/v3-teaching; new8=6/8 exact. Both failures preserved.
+Earlier root results/comparison and results/version.json describe the historical thinking-v1 experiment. No v3 A/B comparison has been run.
+Earlier report/video are in history/thinking-v1. Earlier editable demo/source is historical; demo/source-v3 is current.
+Read docs/REVIEW_GATE.md for review responsibility and limits.
+
+Post-freeze transport correction:LLM_NAME model selector and optional Bearer key now supported.26 stub-inclusive tests; no model batch rerun. See docs/CONFIGURATION_AMENDMENT.md. Original model frozen bytes archived in history/v3-model-frozen.py.

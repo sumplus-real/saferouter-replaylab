@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "tensors": 324,
+  "general.architecture": "apertus",
+  "general.name": "Apertus v1.5 8b Text",
+  "general.quantization_version": 2,
+  "general.file_type": 15
+}

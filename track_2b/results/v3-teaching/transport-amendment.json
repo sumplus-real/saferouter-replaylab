@@ -1,0 +1,21 @@
+{
+  "kind": "transport configuration fix; no model batch rerun",
+  "original_release": "11db46492baeb72928a4d7df51e95d7e701d6570",
+  "frozen_model_sha256": "21ac8635ad4d5a8af3621de39a4bb457c373f2e41a8f1a947f327f16b294fbe1",
+  "archived_model": "history/v3-model-frozen.py",
+  "changes": [
+    "LLM_NAME is sent as the Chat Completions model selector and recorded consistently",
+    "LLM_API_KEY optional Bearer header, never in evidence/returned records",
+    "LLM_BASE_URL remains local-only, rejects URL credentials/query/fragment",
+    "No redirects or environment proxies for model requests",
+    "Make exports all three variables and forwards by name, without interpolation of values into shell command"
+  ],
+  "not_changed": [
+    "system/teaching messages",
+    "fixed schema",
+    "sampling/length parameters",
+    "core/scorer/task gold",
+    "historical 6/8 result"
+  ],
+  "validation": "Stub tests only; no new model capability or accuracy claim"
+}

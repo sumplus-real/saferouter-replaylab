@@ -1,0 +1,14 @@
+{
+  "time": "2026-10-15T15:20:19.412485+00:00",
+  "reason": "Initial /apply-template disabled thinking but adapter correctly required 32/33 boundaries. All 12 outputs rejected. Scorer None==None bug corrected in separate explicit rescore; not candidate judgments.",
+  "changes": [
+    "enable_thinking=true; explicit op-value clarification and one teaching example (nonstream request/cancel) added, max output 900; no change to held task text/gold, targets or oracle",
+    "One simple adapter canary distinct from twelve tasks; raw output preserved privately",
+    "Repeat same 12 tasks once for adapter repair, not independent heldout validation",
+    "All first-attempt failures and second-attempt costs included in operational totals; compare separately reports generation-only and total repair cost"
+  ],
+  "original_tasks_sha256": "3d75b342e5ff8c5dc0d10b068c1cb7975e0ddfb537fcb15b32a09df27a022589",
+  "original_core_sha256": "a2591328da80baf0256228aa3d375b54494328ff6bf81dcb2056a25746d9dc05",
+  "target_information_disclosed_to_model": false,
+  "comparison_repair": "External cumulative-budget exception inside Hypothesis caused first comparison abort after one row; use parent-owned operation budget and disposable generator worker, retaining initial row separately. Same DSL/targets/oracle/plan and no new model calls."
+}

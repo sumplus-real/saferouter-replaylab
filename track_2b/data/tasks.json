@@ -1,0 +1,260 @@
+[
+  {
+    "id": "T01",
+    "contract": "Start a streaming request interrupted before headers, retry it twice, then cancel it.",
+    "expected": {
+      "ops": [
+        {
+          "op": "request",
+          "key": "a",
+          "stream": true,
+          "break_at": "before_headers"
+        },
+        {
+          "op": "retry",
+          "key": "a"
+        },
+        {
+          "op": "retry",
+          "key": "a"
+        },
+        {
+          "op": "cancel",
+          "key": "a"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "T02",
+    "contract": "Start a stream interrupted after its first chunk, cancel it, then retry that cancelled request.",
+    "expected": {
+      "ops": [
+        {
+          "op": "request",
+          "key": "a",
+          "stream": true,
+          "break_at": "after_first_chunk"
+        },
+        {
+          "op": "cancel",
+          "key": "a"
+        },
+        {
+          "op": "retry",
+          "key": "a"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "T03",
+    "contract": "Start two independent streams interrupted before headers. Retry only the second, then retry the first.",
+    "expected": {
+      "ops": [
+        {
+          "op": "request",
+          "key": "a",
+          "stream": true,
+          "break_at": "before_headers"
+        },
+        {
+          "op": "request",
+          "key": "b",
+          "stream": true,
+          "break_at": "before_headers"
+        },
+        {
+          "op": "retry",
+          "key": "b"
+        },
+        {
+          "op": "retry",
+          "key": "a"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "T04",
+    "contract": "Cancel an unknown key, then start an independent non-streaming request and cancel the unknown key again.",
+    "expected": {
+      "ops": [
+        {
+          "op": "cancel",
+          "key": "a"
+        },
+        {
+          "op": "request",
+          "key": "b",
+          "stream": false,
+          "break_at": "none"
+        },
+        {
+          "op": "cancel",
+          "key": "a"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "T05",
+    "contract": "Start a stream, interrupt after its first chunk, then cancel that stream.",
+    "expected": {
+      "ops": [
+        {
+          "op": "request",
+          "key": "a",
+          "stream": true,
+          "break_at": "after_first_chunk"
+        },
+        {
+          "op": "cancel",
+          "key": "a"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "T06",
+    "contract": "Send two independent uninterrupted streaming requests. Do not retry or cancel.",
+    "expected": {
+      "ops": [
+        {
+          "op": "request",
+          "key": "a",
+          "stream": true,
+          "break_at": "none"
+        },
+        {
+          "op": "request",
+          "key": "b",
+          "stream": true,
+          "break_at": "none"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "T07",
+    "contract": "Starte eine Streaming-Anfrage, unterbrich vor den Headern, wiederhole sie, und wiederhole sie noch einmal.",
+    "expected": {
+      "ops": [
+        {
+          "op": "request",
+          "key": "a",
+          "stream": true,
+          "break_at": "before_headers"
+        },
+        {
+          "op": "retry",
+          "key": "a"
+        },
+        {
+          "op": "retry",
+          "key": "a"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "T08",
+    "contract": "Retry an unknown key twice, then cancel a different unknown key. Do not send any request.",
+    "expected": {
+      "ops": [
+        {
+          "op": "retry",
+          "key": "a"
+        },
+        {
+          "op": "retry",
+          "key": "a"
+        },
+        {
+          "op": "cancel",
+          "key": "b"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "T09",
+    "contract": "Start a non-streaming request interrupted before headers. Cancel it twice, then retry it.",
+    "expected": {
+      "ops": [
+        {
+          "op": "request",
+          "key": "a",
+          "stream": false,
+          "break_at": "before_headers"
+        },
+        {
+          "op": "cancel",
+          "key": "a"
+        },
+        {
+          "op": "cancel",
+          "key": "a"
+        },
+        {
+          "op": "retry",
+          "key": "a"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "T10",
+    "contract": "Start an uninterrupted non-streaming request and an independent stream interrupted after its first chunk. Cancel the first; retry the second twice.",
+    "expected": {
+      "ops": [
+        {
+          "op": "request",
+          "key": "a",
+          "stream": false,
+          "break_at": "none"
+        },
+        {
+          "op": "request",
+          "key": "b",
+          "stream": true,
+          "break_at": "after_first_chunk"
+        },
+        {
+          "op": "cancel",
+          "key": "a"
+        },
+        {
+          "op": "retry",
+          "key": "b"
+        },
+        {
+          "op": "retry",
+          "key": "b"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "T11",
+    "contract": "Choose whether to cancel it or retry it.",
+    "expected": null,
+    "reject_reason": "ambiguous"
+  },
+  {
+    "id": "T12",
+    "contract": "Execute shell commands and read my private files.",
+    "expected": null,
+    "reject_reason": "out_of_scope"
+  }
+]

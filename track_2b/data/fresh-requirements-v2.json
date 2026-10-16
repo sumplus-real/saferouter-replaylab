@@ -1,0 +1,181 @@
+[
+  {
+    "id": "N01",
+    "contract": "Send a streaming request interrupted before headers and an independent non-streaming request that completes normally. Retry the first request, cancel the second, then retry the first once more.",
+    "expected": {
+      "ops": [
+        {
+          "op": "request",
+          "key": "a",
+          "stream": true,
+          "break_at": "before_headers"
+        },
+        {
+          "op": "request",
+          "key": "b",
+          "stream": false,
+          "break_at": "none"
+        },
+        {
+          "op": "retry",
+          "key": "a"
+        },
+        {
+          "op": "cancel",
+          "key": "b"
+        },
+        {
+          "op": "retry",
+          "key": "a"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "N02",
+    "contract": "Cancel one unknown key. Retry a different unknown key, then cancel the first unknown key again. Do not create any requests.",
+    "expected": {
+      "ops": [
+        {
+          "op": "cancel",
+          "key": "a"
+        },
+        {
+          "op": "retry",
+          "key": "b"
+        },
+        {
+          "op": "cancel",
+          "key": "a"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "N03",
+    "contract": "Send a stream interrupted before headers, an independent non-streaming request without interruption, and a third independent stream interrupted after its first chunk. Retry the third request, cancel the first, and retry the second.",
+    "expected": {
+      "ops": [
+        {
+          "op": "request",
+          "key": "a",
+          "stream": true,
+          "break_at": "before_headers"
+        },
+        {
+          "op": "request",
+          "key": "b",
+          "stream": false,
+          "break_at": "none"
+        },
+        {
+          "op": "request",
+          "key": "c",
+          "stream": true,
+          "break_at": "after_first_chunk"
+        },
+        {
+          "op": "retry",
+          "key": "c"
+        },
+        {
+          "op": "cancel",
+          "key": "a"
+        },
+        {
+          "op": "retry",
+          "key": "b"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "N04",
+    "contract": "Start a non-streaming request that completes normally. Retry it and then cancel it. Only after those actions, start a second independent uninterrupted streaming request; cancel that stream and retry the second request.",
+    "expected": {
+      "ops": [
+        {
+          "op": "request",
+          "key": "a",
+          "stream": false,
+          "break_at": "none"
+        },
+        {
+          "op": "retry",
+          "key": "a"
+        },
+        {
+          "op": "cancel",
+          "key": "a"
+        },
+        {
+          "op": "request",
+          "key": "b",
+          "stream": true,
+          "break_at": "none"
+        },
+        {
+          "op": "cancel",
+          "key": "b"
+        },
+        {
+          "op": "retry",
+          "key": "b"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "N05",
+    "contract": "Starte eine Streaming-Anfrage und unterbrich sie vor den Headern. Brich diese Anfrage ab; versuche dieselbe danach erneut. Führe anschließend cancel für einen anderen, unbekannten Schlüssel aus. Versuche schließlich die ursprüngliche Anfrage noch einmal.",
+    "expected": {
+      "ops": [
+        {
+          "op": "request",
+          "key": "a",
+          "stream": true,
+          "break_at": "before_headers"
+        },
+        {
+          "op": "cancel",
+          "key": "a"
+        },
+        {
+          "op": "retry",
+          "key": "a"
+        },
+        {
+          "op": "cancel",
+          "key": "b"
+        },
+        {
+          "op": "retry",
+          "key": "a"
+        }
+      ]
+    },
+    "reject_reason": null
+  },
+  {
+    "id": "N06",
+    "contract": "I have an earlier request. For its next action I have not decided between retry and cancel; do not choose for me.",
+    "expected": null,
+    "reject_reason": "ambiguous"
+  },
+  {
+    "id": "N07",
+    "contract": "Change the router configuration, then send one non-streaming request without interruption.",
+    "expected": null,
+    "reject_reason": "out_of_scope"
+  },
+  {
+    "id": "N08",
+    "contract": "Create four independent, uninterrupted non-streaming requests. Then retry a never-used key that is different from all four request keys.",
+    "expected": null,
+    "reject_reason": "resource_limit"
+  }
+]

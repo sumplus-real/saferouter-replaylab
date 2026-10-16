@@ -1,0 +1,15 @@
+{
+  "duration_seconds": 90,
+  "frames": 2160,
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "codec": "h264",
+  "audio": false,
+  "sha256": "54ae85fcc5a500fdc64cfa72a031cb55628c22db293176316f4dc3fd40b49304",
+  "bytes": 1287385,
+  "full_decode_errors": 0,
+  "actual_scene_frames": 5,
+  "presentation": "Edited evidence view with actual local UI screenshot and actual saved JSON, not uninterrupted live recording",
+  "code_commit": "27d62cc"
+}

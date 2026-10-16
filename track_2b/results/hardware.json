@@ -1,0 +1,14 @@
+{
+  "cpu": "Apple M1 Max",
+  "memory_gib": 32,
+  "architecture": "arm64",
+  "os": "macOS 26.1",
+  "model_threads": 2,
+  "batch_threads": 2,
+  "parallel_slots": 1,
+  "context_tokens": 4096,
+  "GPU_layers": 0,
+  "notes": "Shared workstation; external system load not controlled. Docker uses isolated2CPU3GB colima profile.",
+  "python": "3.12.14",
+  "model_runtime_architecture": "arm64"
+}

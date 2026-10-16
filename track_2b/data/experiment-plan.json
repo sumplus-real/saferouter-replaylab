@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "seeds": [
+    17,
+    29,
+    43,
+    71,
+    101
+  ],
+  "families": [
+    "retry_double_charge",
+    "late_completion",
+    "cross_key",
+    "unknown_cancel",
+    "stream_residue",
+    "reject_legal"
+  ],
+  "targets": [
+    "correct",
+    "clean_control",
+    "retry_double_charge",
+    "late_completion",
+    "cross_key",
+    "unknown_cancel",
+    "stream_residue",
+    "reject_legal"
+  ],
+  "call_budget_per_target": 800,
+  "time_budget_seconds_per_target": 10,
+  "max_examples": 1000,
+  "stateful_step_count": 12,
+  "model_task_order": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T06",
+    "T07",
+    "T08",
+    "T09",
+    "T10",
+    "T11",
+    "T12"
+  ],
+  "model_attempts_per_task": 1,
+  "notes": "A Hypothesis stateful. B same Hypothesis stateful after model seeds. All calls incl seed execution and minimization count. B time includes equal amortized startup and full generation cost per replicate across targets. Not statistically powered."
+}

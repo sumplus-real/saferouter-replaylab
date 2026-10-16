@@ -1,0 +1,6 @@
+{
+  "trial_rows": 160,
+  "all_expected_trials_present": true,
+  "independent_replays": 90,
+  "false_positives": 0
+}

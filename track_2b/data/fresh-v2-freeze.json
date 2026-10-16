@@ -1,0 +1,17 @@
+{
+  "time": "2026-10-15T17:02:27.157010+00:00",
+  "selected_protocol_commit": "7dd6a3790e798f9f87057117f12a512c1641dc30",
+  "calls_on_these_new_requirements": 0,
+  "requirements": 8,
+  "positive_paths": 5,
+  "expected_refusals": 3,
+  "files": {
+    "track_2b/data/fresh-requirements-v2.json": "b6992cb62c093fb895e22fd1d00f0eea40ac8b327854c2626a7ebaae5fb29c61",
+    "track_2b/data/chat-protocol-v2.json": "5bbff0faddf48fac51f951ae5eb947afdb46fc9d9c85a3c1be013ad47b363aec",
+    "track_2b/src/model.py": "20d3e771b827d811168822edf43801e4698df7183e4ba27c8e551ccebed880dc",
+    "track_2b/src/core.py": "a2591328da80baf0256228aa3d375b54494328ff6bf81dcb2056a25746d9dc05",
+    "track_2b/src/tasks.py": "4cb6eea3acc3e2ecb44172dc60927e37bd29833f64791598ce15b58453123d57",
+    "track_2b/data/experiment-plan.json": "55b204fdd7ca463216146a846d2935e08612ada7d60fe103dcaf0a2fb9c319e6"
+  },
+  "scope": "New synthetic requirements frozen before generation under selected v2d protocol; related DSL families, no claim of independent external blind assessment. Gold never enters request or schema."
+}

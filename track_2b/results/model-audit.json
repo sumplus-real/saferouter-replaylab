@@ -1,0 +1,10 @@
+{
+  "tasks": 12,
+  "all_attempts_present": true,
+  "valid": 4,
+  "exact": 3,
+  "timeouts": 3,
+  "initial_failures_preserved": true,
+  "prompt_contains_no_mutant_labels": true,
+  "same_task_repetitions_not_heldout": true
+}

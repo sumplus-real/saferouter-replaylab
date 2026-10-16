@@ -1,0 +1,7 @@
+{
+  "protocol": "router-spec-v1",
+  "authorship": "New protocol and implementation authored with Codex assistance from supervisor-provided design",
+  "owner_review": "No independent human validation of exact oracle recorded",
+  "frozen_before_apertus_outputs": true,
+  "scope": "Synthetic demonstration only; no natural-language contract correctness guarantee"
+}

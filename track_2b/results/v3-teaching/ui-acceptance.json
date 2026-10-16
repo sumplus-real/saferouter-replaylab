@@ -1,0 +1,19 @@
+{
+  "time": "2026-10-15T18:10:02.391474+00:00",
+  "actor": "Codex automated UI tester; not independent human semantic review",
+  "model_protocol_unchanged": true,
+  "live_generation_seconds": 6.827348837001409,
+  "correct_live_sequence": true,
+  "review_required_before_replay": true,
+  "review_cleared_after_candidate_edit": true,
+  "F37_rejected_by_reviewer_with_execution_disabled": true,
+  "F38_runtime_source_label_and_no_candidate_or_approval": true,
+  "clean_correct_target_no_divergence": true,
+  "injected_target_counterexample": true,
+  "downloaded_bundle_fresh_python_S_verified": true,
+  "bundle_sha256": "b2f61405597604b4cf921509600416c66180fedff6e358a2c7922992ecbb4ecd",
+  "native_tests": 17,
+  "network_none_docker_tests": 17,
+  "image_during_final_ui": "5e6c6cec51e4",
+  "limits": "Synthetic local operations only; attestation is neither authentication nor automatic semantic proof."
+}

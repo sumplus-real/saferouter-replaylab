@@ -1,0 +1,1272 @@
+{
+  "distribution_license": "CDLA-Permissive-2.0",
+  "not_model_weight_relicensing": true,
+  "files": [
+    {
+      "file": "model-candidates-attempt1.jsonl",
+      "license": "CDLA-Permissive-2.0",
+      "instances": [
+        {
+          "row": 1,
+          "task_id": "T01",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 2,
+          "task_id": "T02",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 3,
+          "task_id": "T03",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 4,
+          "task_id": "T04",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 5,
+          "task_id": "T05",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 6,
+          "task_id": "T06",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 7,
+          "task_id": "T07",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 8,
+          "task_id": "T08",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 9,
+          "task_id": "T09",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 10,
+          "task_id": "T10",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 11,
+          "task_id": "T11",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 12,
+          "task_id": "T12",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        }
+      ]
+    },
+    {
+      "file": "comparison.jsonl",
+      "license": "CDLA-Permissive-2.0",
+      "instances": [
+        {
+          "row": 1,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 2,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 3,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 4,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 5,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 6,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 7,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 8,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 9,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 10,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 11,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 12,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 13,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 14,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 15,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 16,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 17,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 18,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 19,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 20,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 21,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 22,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 23,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 24,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 25,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 26,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 27,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 28,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 29,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 30,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 31,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 32,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 33,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 34,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 35,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 36,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 37,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 38,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 39,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 40,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 41,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 42,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 43,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 44,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 45,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 46,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 47,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 48,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 49,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 50,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 51,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 52,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 53,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 54,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 55,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 56,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 57,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 58,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 59,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 60,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 61,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 62,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 63,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 64,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 65,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 66,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 67,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 68,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 69,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 70,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 71,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 72,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 73,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 74,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 75,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 76,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 77,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 78,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 79,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 80,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 81,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 82,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 83,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 84,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 85,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 86,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 87,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 88,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 89,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 90,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 91,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 92,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 93,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 94,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 95,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 96,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 97,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 98,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 99,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 100,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 101,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 102,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 103,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 104,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 105,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 106,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 107,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 108,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 109,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 110,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 111,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 112,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 113,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 114,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 115,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 116,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 117,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 118,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 119,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 120,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 121,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 122,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 123,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 124,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 125,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 126,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 127,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 128,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 129,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 130,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 131,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 132,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 133,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 134,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 135,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 136,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 137,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 138,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 139,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 140,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 141,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 142,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 143,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 144,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 145,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 146,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 147,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 148,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 149,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 150,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 151,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 152,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 153,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 154,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 155,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 156,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 157,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 158,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 159,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 160,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        }
+      ]
+    },
+    {
+      "file": "model-candidates.jsonl",
+      "license": "CDLA-Permissive-2.0",
+      "instances": [
+        {
+          "row": 1,
+          "task_id": "T01",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 2,
+          "task_id": "T02",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 3,
+          "task_id": "T03",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 4,
+          "task_id": "T04",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 5,
+          "task_id": "T05",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 6,
+          "task_id": "T06",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 7,
+          "task_id": "T07",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 8,
+          "task_id": "T08",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 9,
+          "task_id": "T09",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 10,
+          "task_id": "T10",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 11,
+          "task_id": "T11",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 12,
+          "task_id": "T12",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        }
+      ]
+    },
+    {
+      "file": "comparison-attempt1.jsonl",
+      "license": "CDLA-Permissive-2.0",
+      "instances": [
+        {
+          "row": 1,
+          "task_id": null,
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        }
+      ]
+    },
+    {
+      "file": "v3-teaching/old12-regression.jsonl",
+      "license": "CDLA-Permissive-2.0",
+      "instances": [
+        {
+          "row": 1,
+          "task_id": "T01",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 2,
+          "task_id": "T02",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 3,
+          "task_id": "T03",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 4,
+          "task_id": "T04",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 5,
+          "task_id": "T05",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 6,
+          "task_id": "T06",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 7,
+          "task_id": "T07",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 8,
+          "task_id": "T08",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 9,
+          "task_id": "T09",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 10,
+          "task_id": "T10",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 11,
+          "task_id": "T11",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 12,
+          "task_id": "T12",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        }
+      ]
+    },
+    {
+      "file": "v3-teaching/model-candidates.jsonl",
+      "license": "CDLA-Permissive-2.0",
+      "instances": [
+        {
+          "row": 1,
+          "task_id": "F31",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 2,
+          "task_id": "F32",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 3,
+          "task_id": "F33",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 4,
+          "task_id": "F34",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 5,
+          "task_id": "F35",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 6,
+          "task_id": "F36",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 7,
+          "task_id": "F37",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        },
+        {
+          "row": 8,
+          "task_id": "F38",
+          "license": "CDLA-Permissive-2.0",
+          "origin": "Synthetic test, generated model response or deterministic synthetic observation"
+        }
+      ]
+    }
+  ]
+}

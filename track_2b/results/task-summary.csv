@@ -1,0 +1,13 @@
+task_id,schema_valid,contract_exact,seconds,error
+T01,True,True,151.0390257500112,
+T02,True,True,175.58063870796468,
+T03,False,False,180.0138212920283,timed out
+T04,False,False,148.4620732079493,unexpected or missing fields
+T05,False,False,180.16257504199166,timed out
+T06,True,True,138.42616058298154,
+T07,False,False,176.31181637500413,"Expecting ',' delimiter: line 1 column 244 (char 243)"
+T08,False,False,88.38157737499569,unexpected or missing fields
+T09,True,False,129.39511400001356,
+T10,False,False,172.25570979202166,invalid/truncated Apertus thinking boundary
+T11,False,False,61.47796820895746,operation not allowed
+T12,False,False,180.01219483400928,timed out

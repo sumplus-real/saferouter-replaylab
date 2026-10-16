@@ -1,0 +1,38 @@
+{
+  "retry_double_charge": {
+    "task": "T01",
+    "known_bad_detected": true,
+    "correct_clean": true,
+    "broken_oracle_fails_canary": true
+  },
+  "late_completion": {
+    "task": "T02",
+    "known_bad_detected": true,
+    "correct_clean": true,
+    "broken_oracle_fails_canary": true
+  },
+  "cross_key": {
+    "task": "T03",
+    "known_bad_detected": true,
+    "correct_clean": true,
+    "broken_oracle_fails_canary": true
+  },
+  "unknown_cancel": {
+    "task": "T04",
+    "known_bad_detected": true,
+    "correct_clean": true,
+    "broken_oracle_fails_canary": true
+  },
+  "stream_residue": {
+    "task": "T02",
+    "known_bad_detected": true,
+    "correct_clean": true,
+    "broken_oracle_fails_canary": true
+  },
+  "reject_legal": {
+    "task": "T06",
+    "known_bad_detected": true,
+    "correct_clean": true,
+    "broken_oracle_fails_canary": true
+  }
+}
